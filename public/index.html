@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/login.css">
+    <title>Sitezin de jogo</title>
+</head>
+<body>
+    <header id="navbar" class="d-none">
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+        <ul>
+            <li>HOME</li>
+        </ul>
+        <ul>
+            <li>ACTION FIGURES</li>
+        </ul>
+        <ul>
+            <li>CONSOLES</li>
+        </ul>
+        <ul>
+            <li>BOOKS</li>
+        </ul>
+        <ul>
+            <li>GAMES</li>
+        </ul>
+            <div class="cart">
+                <img id="cart-icon" src="images/carrinhocompras.png" alt="">
+            </div>
+    </header>
+    <main>
+        <ul id="sliders" class="d-none">
+            <li class="slider-active">
+                <img src="images/teste/slider-01.jpg" />
+            </li>
+            <li><img src="images/teste/slider-02.jpg" /></li>
+            <li><img src="images/teste/slider-03.jpg" /></li>
+        </ul>
+        
+        <div class="products-promo d-none">
+            <h1>Games</h1>
+            <div class="product product-one" data-name="The Witcher III" data-price="R$200,00" data-source="images/games/001.jpg">
+                <img src="images/games/001.jpg" alt="">
+                <div class="product-bottom">
+                    <div class="info">
+                        <h1>The Witcher III</h1>
+                        <h3>R$200,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+            <div class="product product-two" data-name="Cyberpunk 2077" data-price="R$390,00" data-source="images/games/002.jpg">
+                <img src="images/games/002.jpg" alt="" >
+                <div class="product-bottom">
+                    <div class="info">
+                        <h1>Cyberpunk 2077</h1>
+                        <h3>R$390,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+            <div class="product product-three" data-name="God of War" data-price="R$200,00" data-source="images/games/003.jpg">
+                <img src="images/games/003.jpg" alt="">
+                <div class="product-bottom">
+                    <div class="info">
+                        <h1>God of War</h1>
+                        <h3>R$200,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+            <div class="product product-four" data-name="Horizon Zero Dawn" data-price="R$200,00" data-source="images/games/004.jpg">
+                <img src="images/games/004.jpg" alt="">
+                <div class="product-bottom">
+                    <div class="info">
+                        <h1>Horizon Zero Dawn</h1>
+                        <h3>R$200,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+            <div class="product product-five" data-name="Spider-man" data-price="R$200,00" data-source="images/games/005.jpg">
+                <img src="images/games/005.jpg" alt="">
+                <div class="product-bottom">
+                    <div class="info">
+                        <h1>Spider-man</h1>
+                        <h3>R$200,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+
+            <div class="product product-six" data-name="Override 2" data-price="R$200,00" data-source="images/games/006.jpg">
+                <img src="images/games/006.jpg" alt="">
+                <div class="product-bottom">
+                    <div class="info">
+                        <h1>Override 2</h1>
+                        <h4>Super Mech League</h4>
+                        <h3>R$200,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+            <div class="product product-seven" data-name="Far Cry Classic" data-price="R$200,00" data-source="images/games/007.jpg">
+                <img src="images/games/007.jpg" alt="">
+                <div class="product-bottom">
+                    <div class="info">
+                        <h1>Far Cry Classic</h1>
+                        <h3>R$200,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+            <div class="product product-eigth" data-name="Halo Infinite" data-price="R$200,00" data-source="images/games/008.jpg">
+                <img src="images/games/008.jpg" alt="">
+                <div class="product-bottom">
+                    <div class="info">
+                        <h1>Halo Infinite</h1>
+                        <h3>R$200,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+            <div class="product product-nine" data-name="Ori: And the will of the wisps " data-price="R$200,00" data-source="images/games/009.jpg">
+                <img src="images/games/009.jpg" alt="">
+                <div class="product-bottom">
+                    <div class="info">
+                        <h1>Ori</h1>
+                        <h4>And the will of the wisps</h4>
+                        <h3>R$200,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+            <div class="product product-ten" data-name="Outriders" data-price="R$200,00" data-source="images/games/010.jpg">
+                <img src="images/games/010.jpg" alt="">
+                <div class="product-bottom">
+                    <div class="info">
+                        <h1>Outriders</h1>
+                        <h3>R$200,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <form id="form-login" class="login">
+                <input id="input-login" type="text" placeholder="Login">
+                <input id="input-password" type="password" placeholder="Password">
+                <p id="erro-input" class="d-none">Preencha os campos corretamente</p>
+                <input id="input-button" type="button" value="Login">
+            </form>
+        </div>
+
+        <div id="action-figures" class="collections-star-wars d-none">
+            <h1>Action Figures</h1>
+            <div class="char product-char" data-name="Chewbacca" data-price="R$150" data-source="images/characters/star_wars/1.jpg">
+                <img src="images/characters/star_wars/1.jpg" alt="">
+                <div class="char-bottom">
+                    <div class="info">
+                        <h1>Chewbacca</h1>
+                        <h3>R$150,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+            <div class="char product-char" data-name="Skywalker Rey" data-price="R$200" data-source="images/characters/star_wars/2.jpg">
+                <img src="images/characters/star_wars/2.jpg" alt="">
+                <div class="char-bottom">
+                    <div class="info">
+                        <h1>Skywalker Rey</h1>
+                        <h3>R$200,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+            <div class="char product-char" data-name="Dark Rey" data-price="R$200" data-source="images/characters/star_wars/3.jpg">
+                <img src="images/characters/star_wars/3.jpg" alt="">
+                <div class="char-bottom">
+                    <div class="info">
+                        <h1>Dark Rey</h1>
+                        <h3>R$200,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+            <div class="char product-char"  data-name="Baby Yoda" data-price="R$500" data-source="images/characters/star_wars/4.jpg">
+                <img src="images/characters/star_wars/4.jpg" alt="">
+                <div class="char-bottom">
+                    <div class="info">
+                        <h1>Baby Yoda</h1>
+                        <h3>R$500,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+            <div class="char product-char" data-name="Darth Vader" data-price="R$500" data-source="images/characters/star_wars/6.jpg">
+                <img src="images/characters/star_wars/6.jpg" alt="">
+                <div class="char-bottom">
+                    <div class="info">
+                        <h1>Darth Vader</h1>
+                        <h3>R$500,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+        </div>
+
+        <div class="ps5-div d-none" data-name="Playstation 5" data-price="R$5000" data-source="./images/ps5-icon.jpg">
+            <input id="buy-ps5" type="button" value="Add to Cart">
+        </div>
+            
+        
+
+        <div class="book-menu d-none">
+            <h1>Books</h1>
+            <div class="book book-one" data-name="Vingadores: O Destino Chega" data-price="R$200" data-source="images/books/book1.jpg">
+                <img src="images/books/book1.jpg" alt="">
+                <div class="book-bottom">
+                    <div class="info">
+                        <h1>Vingadores: O Destino Chega</h1>
+                        <h3>R$200,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+            <div class="book book-two" data-name="Protocolo BlueHand: Alienígenas" data-price="R$200" data-source="images/books/book4.jpg">
+                <img src="images/books/book4.jpg" alt="">
+                <div class="book-bottom">
+                    <div class="info">
+                        <h1>Protocolo BlueHand: Alienígenas</h1>
+                        <h3>R$200,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+            <div class="book book-three" data-name="Box The Witcher" data-price="R$500" data-source="images/books/book3.jpg">
+                <img src="images/books/book3.jpg" alt="">
+                <div class="book-bottom">
+                    <div class="info">
+                        <h1>Box The Witcher</h1>
+                        <h3>R$500,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+            <div class="book book-four" data-name="Box The Witcher" data-price="R$200" data-source="images/books/book2.jpg">
+                <img src="images/books/book2.jpg" alt="">
+                <div class="book-bottom">
+                    <div class="info">
+                        <h1>Universo Geek: Super Heróis</h1>
+                        <h3>R$200,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+            <div class="book book-five" data-name="O Guia Geek de Cinema" data-price="R$200" data-source="images/books/book5.jpg">
+                <img src="images/books/book5.jpg" alt="">
+                <div class="book-bottom">
+                    <div class="info">
+                        <h1>O Guia Geek de Cinema</h1>
+                        <h3>R$200,00</h3>
+                    </div>
+                    <input class="purchase-button" type="button" value="Add to Cart">
+                </div>
+            </div>
+        </div>
+
+        <div class="purchase d-none">
+            <i id="x" class="fas fa-arrow-left"></i>
+            <form id="purchase-form" class="purchase-clear">
+            </form>
+            <form id="purchase-sum">
+                <h1></h1>
+                <input id="clearCart" type="button" value="Limpar Carrinho">
+                <input id="button-end-purchase" type="button" value="Finalizar Compra">
+            </form>
+        </div>        
+        <footer id="footer" class="d-none">
+            <h1>Fale conosco, os mais lindos da Growdev. BJSS MANAS</h1>
+        </footer>
+    </main>
+    <script src="./bundle.js"></script>
+</body>
+</html>

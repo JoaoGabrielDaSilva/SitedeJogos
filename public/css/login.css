@@ -1,0 +1,576 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    height: 100%;
+    background-image: url('../images/wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    background: #fff;
+    border-bottom: 1px solid #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+header .cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    background: #fff;
+}
+
+header img:hover {
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+}
+
+.logo {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#button-end-purchase {
+    background: #222;
+    width: 20%;
+    height: 30%;
+    outline: none;
+    border: 1px solid #222;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 1%;
+}
+
+#clearCart {
+    background: #222;
+    width: 20%;
+    height: 30%;
+    outline: none;
+    border: 1px solid #222;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#button-end-purchase:hover {
+    background: #fff;
+    width: 20%;
+    height: 30%;
+    outline: none;
+    color: #222;
+    border: 1px solid #222;
+}
+
+#clearCart:hover {
+    background: #fff;
+    width: 20%;
+    height: 30%;
+    outline: none;
+    color: #222;
+    border: 1px solid #222;
+}
+
+
+
+#sliders{
+	width:100%;
+	height: 50%;
+	list-style: none;  
+	position: relative; 
+	overflow: hidden;
+}
+
+#sliders li img {
+	max-width: 100%;
+	max-height: 100%;
+}
+#sliders li{
+	position: absolute;
+	top:0;
+	left:0;
+	opacity: 0;
+	z-index: 0;
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+#sliders li.slider-active{
+	z-index: 1;
+	opacity: 1;
+}
+
+.products-promo {
+    width: 100%;
+    height: 80%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #222;
+}
+
+.products-promo h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 200%;
+}
+
+.slider {
+    height: 100%;
+    width: 100%;
+}
+
+.product {
+    margin: 1%;
+    width: 15%;
+    height: 40%;
+    background: #fff;
+    border: 1px solid #222;
+    border-radius: 10px;
+    position: relative;
+}
+
+.product img {
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.product:hover {
+    transform: scale(1.03);
+    transition:ease-out;
+    box-shadow: 0px 0px 3px #222;
+    cursor: pointer;
+}
+
+.product-bottom {
+    width: 100%;
+    height: 30%;
+    background: #222;
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.info {
+    color: #fff;
+    text-align: center;
+}
+
+.info input {
+    margin: 3px;
+}
+
+.product-bottom .info h3 {
+    margin-top: 20%;
+}
+
+.collections-star-wars {
+    height: 80%;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #222;
+}
+
+.collections-star-wars h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.char {
+    margin: 1%;
+    width: 15%;
+    height: 40%;
+    background: #fff;
+    border: 1px solid #222;
+    border-radius: 10px;
+    position: relative;
+}
+
+.char img {
+    width: 100%;
+    max-height: 70%;
+    border-radius: 10px;
+    min-height: 50%;
+}
+
+.char-bottom {
+    width: 100%;
+    height: 30%;
+    background: #222;
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-size: 1vh;
+}
+
+
+.ps5-div {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #222;
+    background-image: url('../images/ps5Wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;  
+    position: relative; 
+}
+
+.ps5-div input {
+    position: absolute;
+    bottom: 50%;
+    left: 63%;
+    width: 30%;
+    height: 5%;
+    background:#222;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 2.7vh;
+    transition: 100ms;
+}
+
+.ps5-div input:hover {
+    color: #222;
+    background: #fff;
+    box-shadow: 0px 0px 1px #222;
+    border: 1px solid #222;
+}
+
+.book-menu {
+    width: 100%;
+    height: 40%;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.book-menu h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.book {
+    margin: 1%;
+    width: 15%;
+    height: 80%;
+    background: #fff;
+    border: 1px solid #222;
+    border-radius: 10px;
+    position: relative;
+}
+
+.book img {
+    width: 100%;
+    max-height: 70%;
+    border-radius: 10px;
+}
+
+.book-bottom {
+    width: 100%;
+    height: 30%;
+    background: #222;
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    list-style: none;
+    font-weight: bold;
+}
+
+li {
+    border-radius: 10%;
+}
+
+ul:hover {
+    background: #222;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#footer {
+    width: 100%;
+    height: 10%;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer h1 {
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 40%;
+    height: 60%;
+    background: #222;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: fade 1s;
+}
+
+.login-hide {
+    animation: slideDown 500ms forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.login input {
+    outline: none;
+    border-radius: 5px;
+    border: 0px solid red;
+    width: 50%;
+    height: 10%;
+    margin: 1%;
+}
+
+.login p {
+    color: red;
+    font-size: 2.1rem;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.erro { 
+    border: 1px solid red;
+}
+
+.login input[type=button] {
+    background-image: linear-gradient(to right, #112641 , #2271da);
+    box-shadow: 0px 0px 2px #fff;
+    color: #fff;
+    margin-top: 2%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.login input[type=button]:hover {
+    border: 1px solid #fff;
+}
+
+/* */
+
+.purchase {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.purchase form {
+    width: 50%;
+    height: 50%;
+    border: 1px solid #222;
+    position: relative;
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.fa-arrow-left {
+    font-size: 300%;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+}
+
+.fas {
+    font-size: 250%;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+}
+
+
+.purchase i:hover {
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+}
+
+.purchase .game {
+    width: 20%;
+    height: 75%;
+    background: #fff;
+    border: 1px solid #222;
+    position: relative;
+    margin: 2%;
+    border-radius: 10px;
+}
+
+.purchase-button {
+    border: none;
+    width: 60%;
+    height: 20%;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.purchase-button:hover {
+    background: #222;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#purchase-sum {
+    width: 50%;
+    height: 10%;
+    border: 1px solid #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.info-game {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px solid #222;
+    position: relative;
+}
+
+.game .imagem {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+}
+
+/* */
+
+@keyframes fade {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.slideDown {
+    animation: slideDown ease-in-out 1s;
+}
+
+@keyframes slideDown {
+    from  {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(50vh);
+    }
+}
+
+
+@media (max-width:921px) {
+    #sliders {
+        max-height: 25%;
+    }
+}
+
+@media (max-width:463px) {
+    #sliders {
+        max-height: 20%;
+    }
+}
